@@ -1,0 +1,78 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f5;
+  padding: 20px;
+}
+
+.game-container {
+  width: 400px;
+  max-width: 100%;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+h1 { margin: 0 0 20px; }
+
+.status {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.winner, .draw { font-weight: bold; }
+
+.board {
+  width: 300px;
+  height: 300px;
+  max-width: 100%;
+  margin: 0 auto 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.cell {
+  border: none;
+  background: #e5e7eb;
+  font-size: 42px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell:hover:not(:disabled) { background: #d1d5db; }
+.cell:disabled { cursor: default; color: inherit; }
+.winning-cell { background: #86efac; }
+
+.reset-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.reset-button:hover { background: #1d4ed8; }
+
+.history {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.history h3 { text-align: center; }
+.history p { text-align: center; color: #666; }
+
+.history ol {
+  max-height: 120px;
+  overflow-y: auto;
+}
