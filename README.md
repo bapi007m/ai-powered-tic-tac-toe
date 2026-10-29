@@ -121,3 +121,9 @@ Browser ──POST /api/llm-move──▶ Vite server middleware ──▶ Anthr
 ## Deployment notes
 
 `npm run build` produces a static site in `dist/` that runs Easy, Medium, Hard and 2-player mode anywhere static files can be hosted. The `/api/llm-move` endpoint exists only in the Vite dev and preview servers; to offer the LLM levels in production, host the `server/` logic behind a backend or serverless function at the same path.
+
+
+Play demo
+===========
+<img width="1426" height="954" alt="image" src="https://github.com/user-attachments/assets/0320c311-fcc3-4c75-9332-5b15458985d0" />
+
